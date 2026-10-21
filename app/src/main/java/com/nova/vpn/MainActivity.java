@@ -155,7 +155,7 @@ public class MainActivity extends Activity {
     private void setVpnState(Tunnel.State state) {
         new Thread(() -> {
             try {
-                backend.setState(tunnel, state, config);
+  Tunnel.State result = backend.setState(tunnel, state, config);
             } catch (Exception e) {
                 runOnUiThread(() -> Toast.makeText(this,
                     "Ошибка VPN: " + e.getMessage(),
