@@ -1,1 +1,1 @@
-# NovaVPN
+# Izotop VpN
